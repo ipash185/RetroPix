@@ -1,0 +1,18 @@
+@mixin shadow-box{
+    box-shadow: $color-grey-1 2px 2px 5px 1px;
+    transition: all 0.2s;
+}
+
+@mixin shadow-box-scaleup{
+    transform: scale(1.1);
+    box-shadow: $color-grey-1 5px 4px 6px 1px;
+}
+
+@mixin respond($breakpoint){
+    @if $breakpoint==tab{
+        @media(max-width:800px) {@content};
+    }
+    @if $breakpoint==phone{
+        @media(max-width:500px) {@content};
+    }
+}

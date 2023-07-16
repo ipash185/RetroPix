@@ -1,0 +1,7 @@
+.screen2{
+    display:none;
+    text-align: center;
+    &__flyingText{
+        z-index:2;
+    }
+}

@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    @include respond(tab){
+        font-size:150%;
+    }
+    @include respond(phone){
+        font-size:300%;
+    }
+}
+
+body{
+    height: 100vh;
+    color:$color-grey-2;
+}
+
+.comment{
+    font-size:0.5rem;
+}
+
+video{
+    position: fixed;
+    min-width:100%;
+    min-height:100vh;
+    z-index:-1;
+}

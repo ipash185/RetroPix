@@ -1,0 +1,13 @@
+.fly_l2r{
+    animation: fly_l2r 2s cubic-bezier(0, 0.9, 1, 0.08);
+    animation-fill-mode: backwards;
+}
+
+@keyframes fly_l2r{
+    0%{
+        transform:translateY(-50%) translateX(-100%) skewX(60deg);
+    }
+    100%{
+        transform:translateY(-50%) translateX(100%) skewX(-60deg);
+    }
+}

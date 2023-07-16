@@ -1,0 +1,26 @@
+body,input{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.center{
+    position:relative;
+    top:50%; 
+}
+
+.align-left{
+    text-align:left;
+}
+
+.align-center{
+    text-align:center;
+}
+
+.align-right{
+    text-align:right;
+}
+
+.heading{
+    font-size: 3rem;
+    padding-top:2rem;
+    font-weight: 900;
+}

@@ -1,0 +1,16 @@
+.form-text{
+    & input{
+        background-color:$color-grey-1;
+        width:70%;
+        height:2rem;
+        margin:0.5rem 1rem;
+        font-size:1rem;
+        color:$color-form-text;
+        border-radius: 20rem;
+        border-style: outset;
+        padding-left: 0.6rem;
+        @include shadow-box;
+
+        @include shadow-box-scaleup;
+    }
+}

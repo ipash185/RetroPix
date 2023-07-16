@@ -1,0 +1,62 @@
+.gameScene{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#gametable{
+    display: inline-block;
+    background-color: $color-grey-3;
+    border:3px $color-grey-3 inset;
+    margin: auto;
+    min-width: 30.3rem;
+    perspective:1000px;
+    backdrop-filter:blur(8px);
+}
+
+.pane{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $color-grey-3;
+    margin: auto;
+    height: 30rem;
+    backdrop-filter:blur(8px);
+}
+
+.subpane{
+    display: flex;
+    justify-content: space-evenly;
+    &--1{
+        overflow-y: auto;
+        height:80%;
+    }
+}
+
+.bestPane{
+    margin:10%;
+}
+
+.tileFocus{
+    outline: 5px outset white;
+    outline-offset: 3px;
+    transform: translateZ(1px);
+}
+
+.kcontrol{
+    display:flex;
+    flex-direction:column;
+    position: relative;
+    margin-right: 5px;
+    backdrop-filter:blur(10px);
+    width:40%;
+    left:100%;
+    transform:translateX(-102%);
+    padding:1px;
+    border: 2px $color-grey-3 inset;
+    font-size:0.7rem;
+    &>input{
+        font-size:0.5rem;
+        height:1.5rem;
+    }
+}
