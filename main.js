@@ -432,6 +432,7 @@ function checkwon(){
         flyingText(1);
         sortnset();
         clearInterval(timerInterval);
+        stopChallenge();
     }
 }
 
