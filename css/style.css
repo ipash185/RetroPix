@@ -135,6 +135,10 @@ input[type="button"] {
   outline: 5px outset white;
   outline-offset: 3px;
   transform: translateZ(1px); }
+  @media (max-width: 1100px) {
+    .tileFocus {
+      outline: 0px;
+      transform: translateZ(0px); } }
 
 .kcontrol {
   display: flex;
@@ -154,9 +158,8 @@ input[type="button"] {
     height: 1.5rem; }
   @media (max-width: 1100px) {
     .kcontrol {
-      left: 50%;
-      transform: translateX(-52%);
-      margin: 1%; } }
+      display: none;
+    } }
 
 .statusbar {
   display: flex;
